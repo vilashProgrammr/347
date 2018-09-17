@@ -16,6 +16,7 @@ export class ActorComponent implements OnInit {
   }
 
   ngOnInit() {
+    //DJ14 PROGRAMMR
     this.router.params.subscribe((params) => {
       const id = params['id'];
       this._moviesSerice.getPersonDetail(id).subscribe(person => {
